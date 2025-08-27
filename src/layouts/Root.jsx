@@ -7,9 +7,16 @@ import Topbar from '../components/Topbar/Topbar';
 const Root = () => {
     return (
         <div className='@container roboto-font'>
+            {/* header */}
             <Topbar></Topbar>
             <Navbar></Navbar>
-            <Outlet></Outlet>
+
+            {/* Main */}
+            <div className="">
+                <Outlet></Outlet>
+            </div>
+
+            {/* footer */}
             <Footer></Footer>
         </div>
     );

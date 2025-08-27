@@ -9,9 +9,9 @@ export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-base-100 shadow fixed w-full z-50">
+    <nav className="bg-base-100 shadow w-full z-50 border-y-[2px] border-gray-100">
       <div className="max-w-[1440px] px-[21px] mx-auto sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-[92px] items-center">
           {/* Logo */}
           <div className="flex items-center justify-center space-x-2">
             <img src="/logo.png" height={40} width={40} alt="logo" />

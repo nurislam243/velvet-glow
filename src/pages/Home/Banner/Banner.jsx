@@ -2,7 +2,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
  const Banner = () => {
   return (
-    <section className="bg-base-100 py-12">
+    <section className="bg-base-200 py-12">
       <div className="max-w-[1467px] mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         
         {/* Left Side */}

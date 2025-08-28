@@ -2,6 +2,7 @@ import React from 'react';
 import profile1 from "../../../../src/assets/Testimonial/profile-1.jpg";
 import profile2 from "../../../../src/assets/Testimonial/profile-2.png";
 import testimonialBg from "../../../../src/assets/Testimonial/testimonial-bg.png";
+import Title from '../../../components/Title/Title';
 
 
 const Testimonial = () => {
@@ -22,16 +23,16 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className="bg-base-100 py-20 flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
-        <h2 className="text-4xl font-bold text-center mb-16 text-base-content">Customer Testimonial</h2>
+    <section className="bg-base-200 py-20 flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
+        <Title Text={"Customer Testimonial"} ></Title>
 
         <div className="flex">
-            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8 w-full z-20">
+            <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-8 w-full z-20">
                 {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
                     className={`
-                     rounded w-full md:max-w-[424px] min-h-[284px] bg-base-100 shadow-md py-[48px] px-[30px]`
+                     rounded w-full @min-[1200px]:max-w-[424px] min-h-[284px] bg-base-100 shadow-md py-[48px] px-[30px]`
                     }
                 >
                     <div className="flex items-start space-x-4 mb-4 z-10">
@@ -56,7 +57,7 @@ const Testimonial = () => {
             </div>
               
             {/* Image */}
-            <div className="relative hidden -left-[106px] lg:block">
+            <div className="relative hidden -left-[106px] @min-[1200px]:block">
                 <img
                     src={testimonialBg}
                     alt="Product"

@@ -11,8 +11,8 @@ const ReadyToShop = () => {
   ];
 
   return (
-    <div className="bg-base-200 py-10 px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
-      <div className="max-w-[1444px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+    <div className="bg-base-200 pt-[52px] pb-[100px] px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
+      <div className="max-w-[1444px] mx-auto grid grid-cols-1 @min-[734px]:grid-cols-2 gap-6 items-center">
         {/* slider section */}
         <div className="flex gap-6 w-full">
           <div className="relative">
@@ -44,7 +44,7 @@ const ReadyToShop = () => {
           <p className="text-[#FF9D65] uppercase leading-[30px] text-xl">
             Ready to Shop
           </p>
-          <h2 className="text-3xl font-semibold md:text-[40px] leading-[60px] mt-2 mb-6">
+          <h2 className="text-3xl @min-[728px]:text-2xl font-semibold @min-[1202px]:text-[40px] leading-[60px] mt-2 mb-6">
             Revolutionizing Your Skins <br /> Journey to Radiance
           </h2>
           <button className=" btn w-fit bg-white text-base-content items-center">

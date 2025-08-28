@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ image, title, subtitle, price, discount }) => {
   return (
-    <div className="">
+    <div className="mb-5">
         {/* top-section */}
         <div className="bg-base-300 py-[60px] px-[30px] rounded shadow relative">
             {/* Discount badge */}

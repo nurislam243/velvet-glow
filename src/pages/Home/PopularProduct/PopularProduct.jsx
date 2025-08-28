@@ -8,12 +8,13 @@ import product6 from "../../../../src/assets/PopularProduct/popular-product-6.pn
 import product7 from "../../../../src/assets/PopularProduct/popular-product-7.png";
 import product8 from "../../../../src/assets/PopularProduct/popular-product-8.png";
 import ProductCard from './ProductCard';
+import Title from '../../../components/Title/Title';
 
 const PopularProduct = () => {
     return (
-        <div className="bg-base-100 px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
+        <div className="bg-base-100 pt-[100px] pb-[90px] px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
             <div className='max-w-[1444px] mx-auto'>
-                <h2 className='font-semibold text-[40px] leading-[60px] text-base-content text-center'>Our Popular Product</h2>
+                <Title Text={"Our Popular Product"} ></Title>
 
                 {/* content section */}
                 <div className="grid gap-6 @min-[600px]:grid-cols-2 @min-[960px]:grid-cols-3  @min-[1280px]:grid-cols-4">

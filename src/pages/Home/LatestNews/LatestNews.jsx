@@ -2,6 +2,7 @@ import React from 'react';
 import newsImg1 from "../../../../src/assets/LatestNews/Latest-News-Img-1.png";
 import newsImg2 from "../../../../src/assets/LatestNews/Latest-News-Img-2.png";
 import newsImg3 from "../../../../src/assets/LatestNews/Latest-News-Img-3.png";
+import Title from '../../../components/Title/Title';
 
 const LatestNews = () => {
     const news = [
@@ -23,10 +24,8 @@ const LatestNews = () => {
     ];
 
     return (
-        <section className="bg-base-100 py-20 px-4 sm:px-8 lg:px-16 flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
-        <h2 className="text-4xl font-bold text-center mb-16 text-base-content">
-            Latest News and Blog
-        </h2>
+        <section className="bg-base-100 py-[100px] flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
+            <Title Text={"Latest News and Blog"} ></Title>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-[1444px] auto-rows-fr">            
                 {/* News 1 */}
@@ -41,7 +40,7 @@ const LatestNews = () => {
                             <h3 className="card-title text-base-content text-xl font-semibold mb-4">{news[0].title}</h3>
                             <p className="text-base-content/70 text-sm leading-relaxed mb-4">{news[0].text}</p>
                             <div className="card-actions">
-                            <button className="btn btn-outline btn-primary rounded-full px-8">Read more</button>
+                            <button className="btn btn-outline btn-primary rounded hover:bg-primary px-8">Read more</button>
                             </div>
                         </div>
                     </div>
@@ -59,7 +58,7 @@ const LatestNews = () => {
                             <h3 className="card-title text-base-content text-xl font-semibold mb-4">{news[1].title}</h3>
                             <p className="text-base-content/70 text-sm leading-relaxed mb-4">{news[1].text}</p>
                             <div className="card-actions">
-                            <button className="btn btn-outline btn-primary rounded-full px-8">Read more</button>
+                            <button className="btn btn-outline btn-primary rounded hover:bg-primary px-8">Read more</button>
                             </div>
                         </div>
                     </div>
@@ -78,7 +77,7 @@ const LatestNews = () => {
                             <h3 className="card-title text-base-content text-xl font-semibold mb-4">{news[2].title}</h3>
                             <p className="text-base-content/70 text-sm leading-relaxed mb-4">{news[2].text}</p>
                             <div className="card-actions">
-                            <button className="btn btn-outline btn-primary rounded-full px-8">Read more</button>
+                            <button className="btn btn-outline btn-primary rounded px-8 hover:bg-primary">Read more</button>
                             </div>
                         </div>
                     </div>

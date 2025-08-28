@@ -22,11 +22,11 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className="bg-base-100 py-20 flex flex-col items-center">
+    <section className="bg-base-100 py-20 flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
         <h2 className="text-4xl font-bold text-center mb-16 text-base-content">Customer Testimonial</h2>
 
         <div className="flex">
-            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8 w-full z-50">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8 w-full z-20">
                 {testimonials.map((testimonial, index) => (
                 <div
                     key={index}

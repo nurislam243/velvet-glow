@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-10 py-[100px] ">
+    <footer className="bg-black text-white py-[100px] px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
       <div className="max-w-[1444px] mx-auto grid md:grid-cols-3 gap-8 mb-[60px]">
         {/* Left Section */}
         <div>

@@ -8,7 +8,7 @@ import LatestNews from './LatestNews/LatestNews';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Banner></Banner>
             <Collection></Collection>
             <ReadyToShop></ReadyToShop>

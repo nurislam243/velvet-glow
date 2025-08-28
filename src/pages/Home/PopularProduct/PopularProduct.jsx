@@ -11,12 +11,12 @@ import ProductCard from './ProductCard';
 
 const PopularProduct = () => {
     return (
-        <div className="bg-base-100">
+        <div className="bg-base-100 px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
             <div className='max-w-[1444px] mx-auto'>
                 <h2 className='font-semibold text-[40px] leading-[60px] text-base-content text-center'>Our Popular Product</h2>
 
                 {/* content section */}
-                <div className="grid gap-6 grid-cols-4">
+                <div className="grid gap-6 @min-[600px]:grid-cols-2 @min-[960px]:grid-cols-3  @min-[1280px]:grid-cols-4">
                     <ProductCard
                         image={product1}
                         title="Lipstick"

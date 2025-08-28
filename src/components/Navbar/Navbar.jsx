@@ -9,9 +9,9 @@ export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-base-100 shadow w-full z-50 border-y-[2px] border-gray-100">
-      <div className="max-w-[1440px] px-[21px] mx-auto sm:px-6 lg:px-8">
-        <div className="flex justify-between h-[92px] items-center">
+    <nav className="bg-base-100 sticky top-0 shadow w-full z-50 border-y-[2px] border-gray-100">
+      <div className="max-w-[1440px] @min-[1536px]:px-[21px] mx-auto px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8">
+        <div className="flex justify-between h-[70px] @min-[1100px]:h-[80px] @min-[1500px]:h-[92px] items-center">
           {/* Logo */}
           <div className="flex items-center justify-center space-x-2">
             <img src="/logo.png" height={40} width={40} alt="logo" />
@@ -19,7 +19,7 @@ export default function Navbar() {
           </div>
 
           {/* Nav Links */}
-          <div className="hidden md:flex space-x-[50px] text-base-content">
+          <div className="hidden @min-[1050px]:flex space-x-[50px] text-base-content">
             <a href="#" className="hover:text-primary font-medium text-base leading-6">Home</a>
             <a href="#" className="hover:text-primary font-medium text-base leading-6">Shop</a>
             <a href="#" className="hover:text-primary font-medium text-base leading-6">Product</a>
@@ -36,7 +36,6 @@ export default function Navbar() {
               {isDropdownOpen && (
                 <div className="absolute top-8 left-0 bg-base-100 shadow-md rounded-md py-2 w-40">
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">Latest Posts</a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">Tech News</a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">Tutorials</a>
                 </div>
               )}
@@ -46,7 +45,7 @@ export default function Navbar() {
           </div>
 
           {/* Icons */}
-          <div className="hidden md:flex items-center space-x-5 text-base-content">
+          <div className="hidden @min-[1050px]:flex items-center space-x-5 text-base-content">
             <div className="border-[2px] cursor-pointer hover:text-primary border-gray-100 rounded-full p-2 text-[#333333] flex justify-center items-center">
                 <RiSearchLine  className="w-6 h-6" />
             </div>
@@ -59,7 +58,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="@min-[1050px]:hidden flex items-center">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <FaTimes className="w-6 h-6" /> : <FaBars className="w-6 h-6" />}
             </button>
@@ -69,7 +68,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-base-100 shadow-md px-4 pt-2 pb-4 space-y-2 text-base-content">
+        <div className="@min-[1050px]:hidden bg-base-100 shadow-md px-4 pt-2 pb-4 space-y-2 text-base-content">
           <a href="#" className="block hover:text-primary font-medium text-base leading-6">Home</a>
           <a href="#" className="block hover:text-primary font-medium text-base leading-6">Shop</a>
           <a href="#" className="block hover:text-primary font-medium text-base leading-6">Product</a>
@@ -82,7 +81,6 @@ export default function Navbar() {
           {isDropdownOpen && (
             <div className="ml-4 space-y-1">
               <a href="#" className="block hover:text-primary">Latest Posts</a>
-              <a href="#" className="block hover:text-primary">Tech News</a>
               <a href="#" className="block hover:text-primary">Tutorials</a>
             </div>
           )}

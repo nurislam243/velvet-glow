@@ -4,8 +4,8 @@ import bannerImg1 from "../../../../src/assets/Banner/bannerImg-1.png";
 
  const Banner = () => {
   return (
-    <section className="bg-base-200 py-12">
-      <div className="max-w-[1467px] mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    <section className="bg-base-200 py-12 px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
+      <div className="max-w-[1444px] mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         
         {/* Left Side */}
         <div className="space-y-6">

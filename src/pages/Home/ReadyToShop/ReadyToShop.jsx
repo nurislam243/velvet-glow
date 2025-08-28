@@ -11,7 +11,7 @@ const ReadyToShop = () => {
   ];
 
   return (
-    <div className="bg-base-200 py-10">
+    <div className="bg-base-200 py-10 px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
       <div className="max-w-[1444px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         {/* slider section */}
         <div className="flex gap-6 w-full">

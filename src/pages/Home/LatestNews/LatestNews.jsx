@@ -23,7 +23,7 @@ const LatestNews = () => {
     ];
 
     return (
-        <section className="bg-base-100 py-20 px-4 sm:px-8 lg:px-16 flex flex-col items-center">
+        <section className="bg-base-100 py-20 px-4 sm:px-8 lg:px-16 flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
         <h2 className="text-4xl font-bold text-center mb-16 text-base-content">
             Latest News and Blog
         </h2>

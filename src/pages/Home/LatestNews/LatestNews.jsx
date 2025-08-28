@@ -27,17 +27,17 @@ const LatestNews = () => {
         <section className="bg-base-100 py-[100px] flex flex-col items-center px-3 @min-[400px]:px-4 @min-[600px]:px-5 @min-[700px]:px-7 @min-[900px]:px-8 @min-[1500px]:px-0">
             <Title Text={"Latest News and Blog"} ></Title>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-[1444px] auto-rows-fr">            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0 w-full max-w-[1444px] auto-rows-fr">            
                 {/* News 1 */}
                 <div className="flex flex-col sm:flex-row lg:flex-col-reverse">
                     {/* news image */}
                     <div className="">
-                        <img src={newsImg2} alt='' />
+                        <img src={newsImg2} alt='' className='h-full lg:h-[347px] w-full'/>
                     </div>
                     {/* news content  */}
-                    <div className="card w-full bg-base-200 shadow-xl">
-                        <div className="card-body">
-                            <h3 className="card-title text-base-content text-xl font-semibold mb-4">{news[0].title}</h3>
+                    <div className="lg:h-[347px] w-full bg-base-200 lg:bg-base-100 shadow-xl lg:shadow-none">
+                        <div className="py-[55px] px-[18px]">
+                            <h3 className="card-title text-base-content text-xl md:text-2xl leading-9 font-semibold mb-4">{news[0].title}</h3>
                             <p className="text-base-content/70 text-sm leading-relaxed mb-4">{news[0].text}</p>
                             <div className="card-actions">
                             <button className="btn btn-outline btn-primary rounded hover:bg-primary px-8">Read more</button>
@@ -50,12 +50,12 @@ const LatestNews = () => {
                 <div className="flex flex-col sm:flex-row lg:flex-col">
                     {/* news image */}
                     <div className="">
-                        <img src={newsImg1} alt='' />
+                        <img src={newsImg1} alt='' className='h-full lg:h-[347px] w-full'/>
                     </div>
                     {/* news content  */}
-                    <div className="card w-full bg-base-200 shadow-xl">
-                        <div className="card-body">
-                            <h3 className="card-title text-base-content text-xl font-semibold mb-4">{news[1].title}</h3>
+                    <div className="lg:h-[347px] w-full bg-base-200 lg:bg-base-100 shadow-xl lg:shadow-none">
+                        <div className="py-[55px] px-[18px]">
+                            <h3 className="card-title text-base-content text-xl md:text-2xl leading-9 font-semibold mb-4">{news[1].title}</h3>
                             <p className="text-base-content/70 text-sm leading-relaxed mb-4">{news[1].text}</p>
                             <div className="card-actions">
                             <button className="btn btn-outline btn-primary rounded hover:bg-primary px-8">Read more</button>
@@ -68,13 +68,13 @@ const LatestNews = () => {
                 <div className="flex flex-col sm:flex-row lg:flex-col-reverse">
                     {/* news image */}
                     <div className="">
-                        <img src={newsImg3} alt='' />
+                        <img src={newsImg3} alt='' className='h-full lg:h-[347px] w-full'/>
                     </div>
 
                     {/* news content  */}
-                    <div className="card w-full bg-base-200 shadow-xl">
-                        <div className="card-body">
-                            <h3 className="card-title text-base-content text-xl font-semibold mb-4">{news[2].title}</h3>
+                    <div className="lg:h-[347px] w-full bg-base-200 lg:bg-base-100 shadow-xl lg:shadow-none">
+                        <div className="py-[55px] px-[18px]">
+                            <h3 className="card-title text-base-content text-xl md:text-2xl leading-9 font-semibold mb-4">{news[2].title}</h3>
                             <p className="text-base-content/70 text-sm leading-relaxed mb-4">{news[2].text}</p>
                             <div className="card-actions">
                             <button className="btn btn-outline btn-primary rounded px-8 hover:bg-primary">Read more</button>

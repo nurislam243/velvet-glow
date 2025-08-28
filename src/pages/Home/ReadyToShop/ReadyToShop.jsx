@@ -1,11 +1,13 @@
 import React from "react";
+import readyToShopImg1 from "../../../../src/assets/ReadyToShop/ReadyToShop-Img-1.png";
+import readyToShopImg2 from "../../../../src/assets/ReadyToShop/ReadyToShop-Img-2.png";
 import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const ReadyToShop = () => {
 
   const images = [
-    { id: 1, src: "../../../../src/assets/ReadyToShop/ReadyToShop-Img-1.png", alt: "Perfume 1" },
-    { id: 2, src: "../../../../src/assets/ReadyToShop/ReadyToShop-Img-2.png", alt: "Perfume 2" },
+    { id: 1, src: readyToShopImg1, alt: "Perfume 1" },
+    { id: 2, src: readyToShopImg2, alt: "Perfume 2" },
   ];
 
   return (

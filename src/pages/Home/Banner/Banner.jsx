@@ -1,4 +1,6 @@
 import { MdOutlineArrowOutward } from "react-icons/md";
+import bannerImg1 from "../../../../src/assets/Banner/bannerImg-1.png";
+
 
  const Banner = () => {
   return (
@@ -33,7 +35,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
         {/* Right Side */}
         <div className="relative">
           <img
-            src="../../../../src/assets/Banner/bannerImg-1.png"
+            src={ bannerImg1 }
             alt="Product"
             className=""
           />

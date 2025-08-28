@@ -11,11 +11,6 @@ You can view the live project here:
 
 ---
 
-## GitHub Repository
-[https://github.com/nurislam243/velvet-glow](https://github.com/nurislam243/velvet-glow)
-
----
-
 ## Features
 - Fully responsive design for mobile, tablet, and desktop screens
 - Clean and modular React component structure
